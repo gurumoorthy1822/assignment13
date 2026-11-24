@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("....task 1....")
+        let z ="";
+       for (let i = 1; i <= 20; i++)
+    {
+
+    z+= i + " ";
+     }
+     console.log(z);
+
+
+     zz="";
+     let i = 1;
+while (i <= 20) {
+    zz+= i +" ";
+   
+    i++;
+}
+    console.log(zz);
+
+let e = 1;
+do {
+    console.log(e);
+    e++;
+} while (e <= 20);
+
+console.log("....task 2....")
+let p=" ";
+for (let i = 1; i <= 20; i += 2) {
+    p+= i + " ";
+}
+    console.log(p);
+
+console.log("....task 3....")
+let c=" ";
+for (let i = 0; i <= 20; i += 2) {
+    c+= i + " ";
+}
+console.log(c);
+
+console.log("....task 4....")
+let h="";
+for (let i = 0; i <=50 ; i+=5) {
+    h+= i + " ";
+}
+console.log(h);
+
+console.log("...task 5...")
+let g=" ";
+for (let i=1;i<=10;i++){
+    if(i<=10)
+    g+= i+ " + "; 
+    else
+    g+= i;
+}
+console.log(g)
+
+console.log(".....task 6.....")
+ let gg=" ";
+        for(let g=0;g<=10;g+=2){
+            if(g<10)
+            gg+=g+  " + " ;
+            
+            else
+                gg+=g;
+            
+        }console.log(gg);
+
+       console.log("....task 7....")
+       let dd="";
+       for(let i=1;i<=10;i+=2){
+        if(i<10)
+        dd+=i + " + ";
+    else
+       dd+=i;
+       }
+       console.log(dd)
+
+       console.log("....task 8....")
+       let v="";
+       for(let i=0;i<=50;i+=5){
+        if(i<50)
+        v+=i + "+";
+    else
+      v+=i;
+       }
+       console.log(v)
+
+       console.log("...task 9...")
+       let k="";
+       for(let i=0;i<=10;i++){
+        k+=i + " /" + i  +"!" + " + ";
+       }
+       console.log(k)
+
+       console.log("....task 10....")
+       let l="";
+       for(let i=0;i<=10;i+=2){
+      l+=i+"/"+ i + "!" + " + ";
+       }
+       console.log(l)
+
+       console.log("....task 11....")
+       let r="";
+       for(let i=1;i<=10;i+=2){
+        r+=i+"/"+ i + "!" + " + ";
+       }
+       console.log(r)
+       
+       console.log("....task 12....")
+       let b="";
+       for(let i=5;i>=1;i--){
+        b*=i;
+       }
+       console.log(b)
+
+        console.log("....task 13....")
+       let num=Number(prompt("Enter the num"));
+        let count=0;
+        for(let p=1;p<=num;p++)
+            if(num%p==0){
+                count++;
+            
+        }
+            if(count==2)
+                console.log( num + " is prime no");
+            
+            else
+                console.log("this not prime num");
+
+        console.log("....task 14....")
+         for(let x=1;x<=100;x++){
+         let t=0;
+         for(let q=1;q<=x;q++){
+           if(x%q==0){
+               t++;
+             }
+        }
+      if(t==2)
+      console.log(x);
+    }
+
+    console.log("....task 15....")
+
+    let input =parseInt(prompt("Enter the num"));
+    let temp= input;
+    let sum=0;
+    for(let r=input;r>0; r=parseInt(r/10)){
+        let rem=r%10;
+        sum+=rem*rem*rem;
+    }
+    if(temp == sum)
+        console.log("the give num " +  input + " is  amstrong num"); 
+    else
+        console.log("the given num is not prime num");
+
+
+    console.log("....task 16....")
+    let n=1000;
+    const arm=(n)=>{
+        let out=[];
+        for(let i=1;i<=n;i++)
+        if(arm(i)) out,push(i);
+        return out.join(" ");
+    }
+    const arn1=(n)=>{
+        let out=[],i=1;
+        while(i<=n){
+            if(arm1(i)) out.push(i);
+            i++;
+        }
+        return out.join(" ");
+    } 
+    const arm2=(n)=>{
+        let out=[],i=1;
+        do{
+            if(arm2(i)) out.push(i);i++;
+        }
+        while(i<=n);
+        return out.join(" ");
+    }
+
+
+    console.log("....task 17....")
+
+    let n2=8;
+    let a3=0;
+    let b3=1;
+    for(let i2=0;i2<=n;i2++){
+        console.log(a3);
+        a3+=b3;
+    }
+
+    console.log("....task 18....")
+     for(let ump=1;ump<=10;ump++){
+        console.log("5 x "+ ump+"=",5*ump)
+     }
+     console.log("....task 19....")
+     let qq=0;
+     for(let ben=1;ben<=10;ben++){
+        qq+=ben;
+     }
+     console.log(qq);
+
+     console.log("....task 20....")
+
+     const ratfor =(s)=>{
+        for(let i=0,j=s.length -1;i<j;i++,j--)
+        if(s[i] !==s[j])
+        return false;
+        return true;
+     }
+     const ratwhile=(s)=>{
+        let i=0,j=s.length-1;
+        while(i<j){
+            if(s[i]!==s[j])
+            return false; i++;j--;}
+        return true;  
+     }
+     const ratdo=(s)=>{
+        let i=0,j=s.length-1;
+        if(s.length<2)
+        return true;
+    do{
+        if(s[i]!==s[j])
+        return false; i++;j--;
+    }
+    while(i<j);
+    return true;
+     }
+     const ratmsg=(fn)=>(s)=>s+(fn(s)?"is a palindrome" :"is NOT a palindrome");
+    </script>
+</head>
+<body>
+    <h1>Number series</h1>
+</body>
+</html>
